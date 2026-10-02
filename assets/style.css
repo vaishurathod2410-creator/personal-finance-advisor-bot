@@ -1,0 +1,207 @@
+/* Custom CSS styling for FineBuddy Personal Finance Advisor Bot */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1E293B;
+}
+
+/* App Background */
+.stApp {
+    background-color: #F8FAFC;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E2E8F0;
+}
+
+/* Card container */
+.fb-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+    border: 1px solid #F1F5F9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fb-card:hover {
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+}
+
+.fb-card-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1E3A8A;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header hero banner */
+.fb-hero {
+    background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 50%, #3B82F6 100%);
+    border-radius: 20px;
+    padding: 28px 32px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+.fb-hero h1 {
+    color: #FFFFFF !important;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.fb-hero p {
+    color: #DBEAFE !important;
+    font-size: 1.1rem;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+/* Money Health Score Badge & Meter */
+.fb-score-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #EFF6FF 0%, #FFFFFF 100%);
+    border: 2px solid #BFDBFE;
+}
+
+.fb-score-value {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+.score-green {
+    color: #10B981;
+}
+
+.score-yellow {
+    color: #F59E0B;
+}
+
+.score-red {
+    color: #EF4444;
+}
+
+/* Metrics callout */
+.fb-metric-card {
+    background: #F0FDF4;
+    border-left: 4px solid #10B981;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.fb-metric-card.warning {
+    background: #FFFBEB;
+    border-left-color: #F59E0B;
+}
+
+.fb-metric-card.danger {
+    background: #FEF2F2;
+    border-left-color: #EF4444;
+}
+
+.fb-metric-card.blue {
+    background: #EFF6FF;
+    border-left-color: #2563EB;
+}
+
+.fb-metric-title {
+    font-size: 0.85rem;
+    color: #64748B;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fb-metric-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+/* Safety Tips Box */
+.fb-safety-box {
+    background: #F0FDF4;
+    border: 1px solid #A7F3D0;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+.fb-safety-box h4 {
+    color: #065F46;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.fb-safety-item {
+    margin-bottom: 10px;
+    color: #166534;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Chat Message Styling */
+[data-testid="stChatMessage"] {
+    background-color: #FFFFFF !important;
+    border-radius: 14px !important;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02) !important;
+    padding: 14px 18px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Custom Primary Buttons */
+.stButton>button {
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1.25rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton>button[kind="primary"] {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+}
+
+.stButton>button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%) !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35) !important;
+}
+
+/* Custom Inputs */
+div[data-baseweb="input"] {
+    border-radius: 10px !important;
+}
+
+/* Radio Navigation Styling */
+div[data-testid="stSidebar"] div[role="radiogroup"] > label {
+    background: #F8FAFC;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 6px;
+    border: 1px solid #E2E8F0;
+    transition: all 0.2s ease;
+}
+
+div[data-testid="stSidebar"] div[role="radiogroup"] > label:hover {
+    background: #EFF6FF;
+    border-color: #BFDBFE;
+}
